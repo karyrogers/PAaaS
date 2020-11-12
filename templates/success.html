@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>PCAP Download</title>
+	</head>
+	<body>
+		<h1>PCAP Download</h1>
+		<p>Your download should start, if not click <a href="{{downloadlink}}">here</a></p>
+	<script>
+		var link = document.createElement('a');
+		link.href = '{{downloadlink}}';
+<!-- download = '{{filename}}'; -->
+		link.dispatchEvent(new MouseEvent('click'));
+	</script>
+	</body>
+</html>
